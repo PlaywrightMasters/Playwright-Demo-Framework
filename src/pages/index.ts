@@ -1,0 +1,12 @@
+export { AddRemoveElementsPage } from './AddRemoveElementsPage';
+export { BasePage } from './BasePage';
+export { CheckboxesPage } from './CheckboxesPage';
+export { ContextMenuPage } from './ContextMenuPage';
+export { DropdownPage } from './DropdownPage';
+export { DynamicContentPage, type ContentRow } from './DynamicContentPage';
+export { DynamicLoadingPage, type DynamicLoadingExample } from './DynamicLoadingPage';
+export { ForgotPasswordPage } from './ForgotPasswordPage';
+export { HomePage } from './HomePage';
+export { JavaScriptAlertsPage, type DialogDetails, type DialogResponse } from './JavaScriptAlertsPage';
+export { LoginPage } from './LoginPage';
+export { SecureAreaPage } from './SecureAreaPage';

@@ -1,0 +1,43 @@
+{
+  "name": "playwright-demo-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "End-to-end UI and API test automation framework built with Playwright, TypeScript and the Page Object Model",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "playwright test --project=api --project=chromium",
+    "test:all": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:smoke": "playwright test --project=api --project=chromium --grep @smoke",
+    "test:sanity": "playwright test tests/sanity --project=api --project=chromium",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:debug": "playwright test --project=chromium --debug",
+    "test:ui": "playwright test --ui",
+    "test:list": "playwright test --list",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://the-internet.herokuapp.com",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm run lint && npm run format:check",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^24.19.2",
+    "eslint": "^10.15.0",
+    "eslint-plugin-playwright": "^2.12.2",
+    "husky": "^9.1.7",
+    "prettier": "^3.10.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.73.0"
+  }
+}
